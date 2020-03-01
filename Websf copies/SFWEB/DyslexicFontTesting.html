@@ -1,0 +1,53 @@
+<html>
+<head>
+<link href="font.css" rel="stylesheet">
+<script>
+    function changeValue(){
+    var x = document.getElementById("fonts").selectedIndex;
+    var myfont = document.getElementsByTagName("option")[x].value;
+    //alert(myfont);
+    var newval = myfont; 
+    document.getElementById("mytextbox").innerHTML = newval;
+    document.getElementById("mytextbox").style.fontFamily = myfont;
+    }
+</script>
+<script src="font.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<title>DyslexicFontTesting</title>
+<h1>Dyslexic Font Testing</h1>
+<style>
+body { 
+background-color: #c7ffe6;
+}
+</style> 
+<style>
+@import url('https://www.fontify.me/wf/1cc89de3d33c62b9e9d8cdb0afa715aa');
+body{
+font-family: font86463;
+}
+</style>
+</head>
+<body>
+<div id="mytextbox"/></div>
+<input type="button" value="Choose" onclick="changeValue()">
+<select id="fonts" >
+   <option value = "Ariel"> Ariel </option>
+   <option value = "Times New Roman"> Times New Roman </option>
+   <option value = "OpenDyslexic"> OpenDyslexic </option>
+   <option value = "NewportDyslexicFont"> NewportDyslexicFont </option>
+</select>
+<p>Please choose whether you are dyslexic or not</p>
+<input type="button" value="Select" onclick="changeValue()">
+<select id="dyslexic" >
+   <option value = "Yes"> Yes </option>
+   <option value = "No"> No </option>
+</select>
+<p>Please choose your grade level</p>
+<input type="button" value="Choose" onclick="changeValue()">
+<select id="grade" >
+   <option value = "2-3rd"> 2-3rd </option>
+   <option value = "4-5th"> 4-5th </option>
+   <option value = "6-8th"> 6-8th </option>
+</select>
+</body>
+</html>

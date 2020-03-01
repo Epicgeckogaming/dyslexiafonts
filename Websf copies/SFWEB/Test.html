@@ -1,0 +1,26 @@
+<div ng-app="fdApp">
+  <div class="font-dropdown" tabindex="1" fd-font-dropdown>
+    <span class="label" ng-style="{{'fontslist[selectedIdx].style'}}">{{fontslist[selectedIdx].name}}</span>
+  <ul class="dropdown-list">
+      <li ng-repeat="font in fontslist" ng-click="changeFont($index)" ng-class="{'sel': $index == selectedIdx}" ng-style="{{font.style}}">
+          {{font.name}}
+      </li>
+  </ul>
+  </div>
+ <span class="label" ng-style="{{'fontslist[selectedIdx].style'}}">
+<p>Please choose whether you are dyslexic or not</p>
+ </span>
+<input type="button" value="Select" onclick="changeValue()">
+<select id="dyslexic" >
+   <option value = "Yes"> Yes </option>
+   <option value = "No"> No </option>
+</select>
+<span class="label" ng-style="{{'fontslist[selectedIdx].style'}}">
+<p>Please choose your grade level</p></span>
+<input type="button" value="Choose" onclick="changeValue()">
+<select id="grade" >
+   <option value = "2-3rd"> 2-3rd </option>
+   <option value = "4-5th"> 4-5th </option>
+   <option value = "6-8th"> 6-8th </option>
+</select>
+</div>

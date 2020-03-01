@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="xLijC.css">
+<script src="https://code.angularjs.org/1.2.0-rc.3/angular.min.js"></script>
+<script src="xLijC.js"></script>
+<script>
+function Hide_Ariel(){
+  var x = document.getElementById("Show-Ariel");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function Hide_Times_New_Roman(){
+  var x = document.getElementById("Show-Times-New-Roman");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function Hide_OpenDyslexic(){
+  var x = document.getElementById("Show-OpenDyslexic");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function changeValue(){
+ var   grade = document.getElementById("grade");
+ var x,y,z;
+         var a,b,c;	
+
+	x = document.getElementById("Show-Ariel-Button");
+        y = document.getElementById("Show-Times-New-Roman-Button");
+        z = document.getElementById("Show-OpenDyslexic-Button") 
+
+        a = document.getElementById("Show-Ariel");
+        b= document.getElementById("Show-Times-New-Roman");
+        c = document.getElementById("Show-OpenDyslexic") 
+	 x.style.display = "none";
+         y.style.display = "none";
+         z.style.display = "none";	
+	 a.style.display = "none";
+         b.style.display = "none";
+         c.style.display = "none";
+  if( grade.value == "2-3rd" ){
+         var x;
+	
+
+	x = document.getElementById("Show-Ariel-Button");
+        
+	 x.style.display = "block";
+        
+  }
+  else 
+  {
+     alert("Not implemented yet");
+     
+  }
+}
+
+ </script>
+</head>
+<body>
+<div>
+<h1>abcdefghijklmnopqrstuvwxyz</h1>
+<h2>abcdefghijklmnopqrstuvwxyz</h2>
+</div>
+</body>
+</html>
+
