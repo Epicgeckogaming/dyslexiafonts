@@ -207,6 +207,35 @@ font-size:18px;
 }
 
 
+#Show-Ariel-9th {
+display:none;
+visibilty:hidden;
+font-family: 'Arial';
+font-size:18px;
+}
+
+#Show-Times-New-Roman-9th {
+display:none;
+visibilty:hidden;
+font-family: 'Times New Roman';
+font-size:18px;
+}
+
+#Show-OpenDyslexic-9th {
+display:none;
+visibilty:hidden;
+font-family: 'OpenDyslexic';
+font-size:18px;
+}
+
+#Show-LexieDyslexic-9th {
+display:none;
+visibilty:hidden;
+font-family: 'LexieReadable-Regular';
+font-size:18px;
+}
+
+
 #Show-Ariel-Button {
 font-family: 'Ariel';
 font-size:18px;
