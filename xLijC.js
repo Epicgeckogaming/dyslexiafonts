@@ -116,6 +116,14 @@
         
         p = document.getElementById("Show-LexieDyslexic-9th");
 
+        q = document.getElementById("Show-Ariel-10th");
+
+        r= document.getElementById("Show-Times-New-Roman-10th");
+
+        s = document.getElementById("Show-OpenDyslexic-10th");
+        
+        t = document.getElementById("Show-LexieDyslexic-10th");  
+
         
 	 x.style.display = "none";
 
@@ -155,6 +163,13 @@
 
          o.style.display = "none";
          p.style.display = "none";
+
+         q.style.display = "none";
+
+         r.style.display = "none";
+
+         s.style.display = "none";
+         t.style.display = "none";
 
     
 
